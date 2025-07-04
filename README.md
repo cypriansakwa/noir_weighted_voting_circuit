@@ -35,19 +35,12 @@ The Noir circuit enforces the following relation:
 
 $$\sum_{i=0}^{4} \mathrm{votes}_i \cdot \mathrm{weights}_i = \mathrm{public\_total}$$
 
- votes[0] * weights[0] + ... + votes[4] * weights[4] == public_total
-
-
-This ensures the weighted sum of votes matches the publicly claimed total.
-
-
-
 Where:
 - `votes`: an array of **private** inputs representing individual votes.
 - `weights`: an array of **private** inputs representing each vote's weight.
 - `public_total`: a **public** value representing the final weighted total that must match the private computation.
 
-
+This ensures the weighted sum of votes matches the publicly claimed total.
 This is a minimal example to illustrate how to prove knowledge of a private input involved in a linear arithmetic constraint and verify it on-chain.
 
 ---
