@@ -31,9 +31,12 @@ An example repo to verify Noir circuits using:
 
 ## 🧠 Circuit Logic
 
-The Noir circuit enforces the relation:
+The Noir circuit enforces the following relation:
 
-$\sum_{i=0}^{4} (\texttt{votes}[i] \times \texttt{weights}[i]) = \text{public_total}$
+$\sum_{i=0}^{4} (\texttt{votes}[i] \times \texttt{weights}[i]) = \text{public\_total}$
+
+(Or plainly: votes[0] * weights[0] + ... + votes[4] * weights[4] == public_total)
+
 
 This ensures the weighted sum of votes matches the publicly claimed total.
 
