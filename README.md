@@ -33,8 +33,8 @@ An example repo to verify Noir circuits using:
 
 The Noir circuit enforces the relation:
 
-
 $\sum_{i=0}^{4} (\texttt{votes}[i] \times \texttt{weights}[i]) = \texttt{public\_total}$
+
 
 Where:
 - `votes`: an array of **private** inputs representing individual votes.
