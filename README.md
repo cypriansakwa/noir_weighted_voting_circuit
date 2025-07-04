@@ -33,7 +33,7 @@ An example repo to verify Noir circuits using:
 
 The Noir circuit enforces the following relation:
 
-$\sum_{i=0}^{4} \mathrm{votes}_i \cdot \mathrm{weights}_i = \mathrm{public\_total}$
+$$\sum_{i=0}^{4} \mathrm{votes}_i \cdot \mathrm{weights}_i = \mathrm{public\_total}$$
 
  votes[0] * weights[0] + ... + votes[4] * weights[4] == public_total
 
